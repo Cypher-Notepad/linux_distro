@@ -11,24 +11,26 @@ Installed-Size: 189878
 Description: Text Editor that provides hybrid encrpytion
  The Cypher Notepad(CN) is built for protecting user's data. It provides user-friendly security so that users don't need to care about encryption. 
  .
+ ⠀⠀
+ .
  Here are the benefits CN can provide to you:
  .
- ..
- . • Easy
+ ⠀• Easy
  .
- .   CN is easy to use. Users don't need to care about encryption and decryption. Just keep your secret key.
+ ⠀⠀⠀CN is easy to use. Users don't need to care about encryption and decryption. Just keep your secret key.
  .
- . • Simple
+ ⠀• Simple
  .
- .   CN has simple UI. Its interface is extremely familiar to users. Users don't need to worry about getting used to it.
+ ⠀⠀⠀CN has simple UI. Its interface is extremely familiar to users. Users don't need to worry about getting used to it.
  .
- . • Secure
+ ⠀• Secure
  .
- .   CN is the best choice to secure your data. It provides hybrid encryption that uses both RSA and AES.
+ ⠀⠀⠀CN is the best choice to secure your data. It provides hybrid encryption that uses both RSA and AES.
  .
- . • Free
+ ⠀• Free
  .
- .   CN is 100% freeware. It is developer's pleasure for users to use it. Download it and start protecting your data.
+ ⠀⠀⠀CN is 100% freeware. It is developer's pleasure for users to use it. Download it and start protecting your data.
  .
- ..
+ ⠀⠀
+ .
  The source code of this program may be found on Github, "https://github.com/Cypher-Notepad/Cypher-Notepad".  You are always welcome to press the "follow" and "star" button.
