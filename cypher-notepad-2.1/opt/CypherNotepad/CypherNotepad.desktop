@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cypher Notepad
+Comment=Edit text files with hybrid encryption
+Exec=/opt/CypherNotepad/CypherNotepad
+Icon=/opt/CypherNotepad/CypherNotepad.png
+Terminal=false
+Type=Application
+Categories=Unknown
+

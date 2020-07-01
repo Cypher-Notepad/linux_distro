@@ -1,0 +1,14 @@
+Package: cypher-notepad
+Version: 2.1
+Section: unknown
+Maintainer: Dong-Geon Lee <secmatth1996@gmail.com>
+Original-Maintainer: Dong-Geon Lee <secmatth1996@gmail.com>
+Priority: optional
+Architecture: amd64
+Homepage: https://cypher-notepad.github.io/
+Installed-Size: 189878
+Description: Edit text files with hybrid encryption
+ wow.
+ whoa.
+ aweaddddddd
+
