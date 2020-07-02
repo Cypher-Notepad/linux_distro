@@ -22,8 +22,8 @@ else
 		echo "Cypher Notepad requires Java Runtime Environment(JRE). But there isn't any version of JRE(recommend 1.8 or higher)."
 		echo "Please re-install Cypher Notepad 2.1 using"
 		echo ""
-		echo "	wget GITHUB LINK"
-		echo "	dpkg -i DOWNLOADED DEB"
+		echo "	wget https://github.com/Cypher-Notepad/Cypher-Notepad/releases/download/v2.1/cypher-notepad-2.1-linux.deb"
+		echo "	sudo dpkg -i cypher-notepad-2.1-linux.deb"
 		echo ""
 	fi
 fi
