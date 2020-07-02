@@ -9,5 +9,5 @@ javapackager -deploy -native deb -srcdir ./ -srcfiles Cypher-Notepad_2.1_release
 
 3. Re-create deb package with updated config.
 ```
-dpkg-deb --build cypher-notepad-2.1
+dpkg-deb --build cypher-notepad-2.1 cypher-notepad-2.1-linux.deb 
 ``` 
