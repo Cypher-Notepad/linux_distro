@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# @file CypherNotepadLauncher
+# @author LeeDongGeon1996
+# @date 20.10.02
+# @description This script will execute Cypher Notepad(3.0)
+#
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+java_version=`java -version 2>&1 | grep 'java version' | awk 'NR==1{ gsub(/"/,""); print $3 }'`
+if [ -d "/opt/CypherNotepad/runtime" ] && [ -f "/opt/CypherNotepad/CypherNotepad" ]
+then
+	echo "[Launcher]Cypher Notepad is launched with bundled JRE."
+	/opt/CypherNotepad/CypherNotepad
+else
+	if [ "$java_version" != "" ]
+	then
+		echo "[Launcher]Cypher Notepad is launched with Java ${java_version} on the system."
+		java -jar /opt/CypherNotepad/app/Cypher-Notepad-3.0-release.jar
+	else
+		echo -e "${RED}[Launcher]Fail to execute Cypher Notepad 3.0${NC}"
+		echo "Cypher Notepad requires Java Runtime Environment(JRE). But there isn't any version of JRE(1.8 or higher recommended)."
+		echo "Please re-install Cypher Notepad 3.0 using"
+		echo ""
+		echo "	wget https://github.com/Cypher-Notepad/Cypher-Notepad/releases/download/v3.0/cypher-notepad-3.0-linux.deb"
+		echo "	sudo dpkg -i cypher-notepad-3.0-linux.deb"
+		echo ""
+	fi
+fi
