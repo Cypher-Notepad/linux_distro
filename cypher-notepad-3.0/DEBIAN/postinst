@@ -65,7 +65,7 @@ echo "==================================================="
 java_version=`java -version 2>&1 | grep 'java version' | awk 'NR==1{ gsub(/"/,""); print $3 }'`
 if [ "$java_version" != "" ]
 then
-	echo "(Optional) Java ${java_version}, which is required to launch Cypher Notepad, is already installed on your system. You can save 193MB disk space on your computer by removing bundled JRE."
+	echo "(Optional) Java ${java_version}, which is required to launch Cypher Notepad, is already installed on your system. You can save 105MB disk space on your computer by removing bundled JRE."
 	bash /opt/CypherNotepad/scripts/remove_bundled_jre.sh
 	echo ""
 	echo "==================================================="

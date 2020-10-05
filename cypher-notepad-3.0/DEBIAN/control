@@ -8,8 +8,9 @@ Priority: optional
 Architecture: amd64
 Homepage: https://cypher-notepad.github.io/
 Installed-Size: 189878
-Suggests: default-jre | java8-runtime
-Description: Text Editor that provides hybrid encrpytion
+Pre-Depends: dpkg
+Recommends: default-jre | java8-runtime
+Description: The text Editor that provides hybrid encrpytion
  The Cypher Notepad(CN) is built for protecting user's data. It provides user-friendly security so that users don't need to care about encryption. 
  .
  ⠀⠀
