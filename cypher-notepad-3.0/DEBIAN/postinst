@@ -1,7 +1,11 @@
 #!/bin/bash
 # postinst script for Cypher Notepad
 #
+# @modified by LeeDongGeon1996.
+# @date 20.10.05
+#
 # see: dh_installdeb(1)
+# 
 
 set -e
 
@@ -53,18 +57,20 @@ case "$1" in
     ;;
 esac
 
+echo ""
+echo -e "\033[1;33mCypher Notepad 3.0 has been successfully installed.\033[0m"
+echo "==================================================="
+
 # Users can remove bundled JRE if JRE is already installed on the system.
 java_version=`java -version 2>&1 | grep 'java version' | awk 'NR==1{ gsub(/"/,""); print $3 }'`
 if [ "$java_version" != "" ]
 then
-	echo ""
-	echo "Java ${java_version}, which is required to launch Cypher Notepad, is already installed on your system. You can save 193MB disk space on your computer by removing bundled JRE."
+	echo "(Optional) Java ${java_version}, which is required to launch Cypher Notepad, is already installed on your system. You can save 193MB disk space on your computer by removing bundled JRE."
 	bash /opt/CypherNotepad/scripts/remove_bundled_jre.sh
+	echo ""
+	echo "==================================================="
 fi
 
-echo ""
-echo -e "\033[1;33mCypher Notepad 3.0 has been successfully installed.\033[0m"
-echo "==================================================="
 echo "You can create shortcuts by running these commands:"
 echo ""
 echo -e "\033[0;47m\033[1;30m#CLI\033[0m"
